@@ -109,7 +109,7 @@ class MainActivity : AppCompatActivity(), SpeedTestListener {
         if (bandWidth.isEmpty()){
             return ""
         }else{
-           return( " Bandwidth = " + bandWidth[1].split(' ')[0].toFloat()/1000000 + " MHz\n")
+           return( " Bandwidth = " + bandWidth[1].split(' ')[0].toInt() + " Hz\n")
         }
 
     }
